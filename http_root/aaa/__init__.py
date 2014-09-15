@@ -8,3 +8,4 @@ import cherrypy
 def index(*args, **kwargs):
     return u"aaa/index"
 
+
