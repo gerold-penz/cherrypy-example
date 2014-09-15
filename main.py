@@ -3,7 +3,7 @@
 
 import cherrypy
 
-# Namespace imports
+# HTTP-root package
 import http_root
 
 
