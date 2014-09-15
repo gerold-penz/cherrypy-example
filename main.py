@@ -14,6 +14,12 @@ def main():
             # Server settings
             "server.socket_host": "0.0.0.0",
             "server.socket_port": 8080,
+            # Encoding
+            "tools.encode.on": True,
+            "tools.encode.encoding": "utf-8",
+            "tools.decode.on": True,
+            # URL-adaption
+            "tools.trailing_slash.on": True,
         },
         # "/": {
         #     #...
