@@ -7,6 +7,9 @@ import cherrypy
 import http_root
 
 
+LANGUAGE_CODES = ["en", "de"]
+
+
 def main():
 
     config = {
@@ -25,6 +28,10 @@ def main():
         #     #...
         # }
     }
+
+    # Add paths for languages to http_root (examples: "/en/aaa/", "/de/aaa/")
+    for lang in LANGUAGE_CODES:
+        setattr(http_root, lang, http_root)
 
     # Create, configure and start application
     app = cherrypy.Application(http_root, config = config)
